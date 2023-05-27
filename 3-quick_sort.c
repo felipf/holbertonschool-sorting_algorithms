@@ -31,11 +31,12 @@ void ordenarA(int *arr, int der, int izq, size_t size)
 }
 
 /**
- * split - split the array
+ * split - splits the array
  * @arr: array
  * @der: derecha de root
  * @izq: izquierda de root
  * @size: size of array
+ * Return: splitted array
  */
 int split(int *arr, int izq, int der, size_t size)
 {
@@ -44,7 +45,7 @@ int split(int *arr, int izq, int der, size_t size)
 	pivot = arr[der];
 	i = izq;
 
-	for(j = izq; j < der; j++) 
+	for (j = izq; j < der; j++)
 	{
 		if (arr[j] < pivot)
 		{
